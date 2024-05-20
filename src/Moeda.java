@@ -6,4 +6,10 @@ public class Moeda {
         this.time_last_update_utc = dadosConversor.time_last_update_utc();
         this.conversion_rates = dadosConversor.conversion_rates();
     }
+
+    @Override
+    public String toString() {
+        return "Última atualização: " + time_last_update_utc + " | " +
+                "Taxa de conversão: " + conversion_rates;
+    }
 }

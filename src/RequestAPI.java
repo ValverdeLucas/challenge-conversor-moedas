@@ -30,7 +30,7 @@ public class RequestAPI extends NullPointerException {
 
             DadosConversor dadosMoeda = gson.fromJson(response.body(), DadosConversor.class);
             Moeda moeda = new Moeda(dadosMoeda);
-
+            
             return moeda;
 
         } catch (Exception e) {
