@@ -1,3 +1,5 @@
+package com.one.projetos.exception;
+
 public class ErroConversorAPI extends RuntimeException {
     private String message;
 

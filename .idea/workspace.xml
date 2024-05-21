@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b662be19-d88e-4cd4-b500-cfcd7f1a3577" name="Changes" comment="Correção de erro na IDE e arquivos.">
-      <change afterPath="$PROJECT_DIR$/src/Conversor.java" afterDir="false" />
+    <list default="true" id="b662be19-d88e-4cd4-b500-cfcd7f1a3577" name="Changes" comment="Inserção da conexão da API + Menu principal">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/Conversor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/one/projetos/principal/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DadosConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DadosConversor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Moeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Moeda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RequestAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RequestAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conversor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DadosConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/modelos/DadosConversor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ErroConversorAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/exception/ErroConversorAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/modelos/Moeda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RequestAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/RequestAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,21 +84,25 @@
       <option name="project" value="LOCAL" />
       <updated>1716239838868</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inserção da conexão da API + Menu principal">
+      <option name="closed" value="true" />
+      <created>1716250550433</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716250550433</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correção de erro na IDE e arquivos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção de erro na IDE e arquivos." />
+    <MESSAGE value="Inserção da conexão da API + Menu principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inserção da conexão da API + Menu principal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RequestAPI.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="com.google.gson.JsonSyntaxException" package="com.google.gson" />
           <option name="timeStamp" value="2" />

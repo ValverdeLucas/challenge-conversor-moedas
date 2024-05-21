@@ -1,12 +1,17 @@
+package com.one.projetos.conversormoedas.metodos;
+
 import com.google.gson.Gson;
+import com.one.projetos.conversormoedas.modelos.Moeda;
+import com.one.projetos.conversormoedas.modelos.DadosConversor;
+import com.one.projetos.exception.ErroConversorAPI;
 
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.Date;
 
-public class RequestAPI extends NullPointerException {
+
+public class RequestAPI {
 
     public Moeda RequestApi(String moeda1, String moeda2) {
 
@@ -35,9 +40,7 @@ public class RequestAPI extends NullPointerException {
             return moeda;
 
         } catch (Exception e) {
-            System.out.println("Opss, Houve um erro durante a consulta à API do ViaCEP.");
-            e.printStackTrace();
+            throw new ErroConversorAPI("Opss, Houve um erro durante a consulta à ExchangeRate-API. Tente novamente!");
         }
-        return null;
     }
 }
