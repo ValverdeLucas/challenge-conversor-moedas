@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b662be19-d88e-4cd4-b500-cfcd7f1a3577" name="Changes" comment="Inserção da conexão da API + Menu principal">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/Conversor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/one/projetos/principal/Main.java" afterDir="false" />
+    <list default="true" id="b662be19-d88e-4cd4-b500-cfcd7f1a3577" name="Changes" comment="Lançamento de pequenas correções após finalização da aplicação vanilla">
+      <change afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/ImprimeHistoricoConversao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conversor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DadosConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/modelos/DadosConversor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ErroConversorAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/exception/ErroConversorAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Moeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/modelos/Moeda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RequestAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/RequestAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/Conversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/Conversor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/modelos/Moeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/modelos/Moeda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/one/projetos/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/principal/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,13 +87,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716250550433</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finalização da aplicação vanilla (sem nenhum extra)">
+      <option name="closed" value="true" />
+      <created>1716263558093</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716263558093</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Lançamento de pequenas correções após finalização da aplicação vanilla">
+      <option name="closed" value="true" />
+      <created>1716263908157</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716263908157</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correção de erro na IDE e arquivos." />
     <MESSAGE value="Inserção da conexão da API + Menu principal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserção da conexão da API + Menu principal" />
+    <MESSAGE value="Finalização da aplicação vanilla (sem nenhum extra)" />
+    <MESSAGE value="Lançamento de pequenas correções após finalização da aplicação vanilla" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lançamento de pequenas correções após finalização da aplicação vanilla" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

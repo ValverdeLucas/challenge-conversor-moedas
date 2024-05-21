@@ -1,9 +1,11 @@
 package com.one.projetos.principal;
 
 import com.one.projetos.conversormoedas.metodos.Conversor;
+import com.one.projetos.conversormoedas.metodos.ImprimeHistoricoConversao;
 import com.one.projetos.conversormoedas.modelos.Moeda;
 
 
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Scanner;
@@ -26,13 +28,13 @@ public class Main {
         return input.nextDouble();
     }
 
-    public static void main(String[] args) throws NullPointerException, URISyntaxException {
+    public static void main(String[] args) throws NullPointerException, URISyntaxException, IOException {
         Scanner input = new Scanner(System.in);
         Conversor conversor = new Conversor();
         double valorConverter;
 
         String menu = """      
-                **************************************************
+                \n1**************************************************
                 Bem vindo(a) ao Conversor de Moedas em tempo real!
                 
                 Escolha a opção para conversão:
@@ -44,12 +46,13 @@ public class Main {
                 5- Dolar Americano (USD) >>> Peso Colombiano (COP)
                 6- Peso Colombiano (COP) >>> Dolar Americano (USD)
                 7- Seleção personalizada
-                8- Sair
+                8- Histórico de conversões
+                0- Sair
                 *************************************************
                 """;
 
         var menuPrincipal = -1;
-        while (menuPrincipal != 8) {
+        while (menuPrincipal != 0) {
 
             System.out.println(menu);
             menuPrincipal = validateOption(input);
@@ -70,7 +73,6 @@ public class Main {
                     valorConverter = validateAmount(input);
                     System.out.println("O valor de " + valorConverter + "(" + moeda.getBase_code() + ") corresponde a quantia de " + conversor.converterValores(valorConverter, "BRL", "USD") + "(" + moeda.getTarget_code() + ")");
                     System.out.println("Cotação atualizada em: " + moeda.getTime_last_update_utc());
-
                     break;
 
                 case 3:
@@ -79,7 +81,6 @@ public class Main {
                     valorConverter = validateAmount(input);
                     System.out.println("O valor de " + valorConverter + "(" + moeda.getBase_code() + ") corresponde a quantia de " + conversor.converterValores(valorConverter, "USD", "ARS") + "(" + moeda.getTarget_code() + ")");
                     System.out.println("Cotação atualizada em: " + moeda.getTime_last_update_utc());
-
                     break;
 
                 case 4:
@@ -88,7 +89,6 @@ public class Main {
                     valorConverter = validateAmount(input);
                     System.out.println("O valor de " + valorConverter + "(" + moeda.getBase_code() + ") corresponde a quantia de " + conversor.converterValores(valorConverter, "ARS", "USD") + "(" + moeda.getTarget_code() + ")");
                     System.out.println("Cotação atualizada em: " + moeda.getTime_last_update_utc());
-
                     break;
 
                 case 5:
@@ -97,7 +97,6 @@ public class Main {
                     valorConverter = validateAmount(input);
                     System.out.println("O valor de " + valorConverter + "(" + moeda.getBase_code() + ") corresponde a quantia de " + conversor.converterValores(valorConverter, "USD", "COP") + "(" + moeda.getTarget_code() + ")");
                     System.out.println("Cotação atualizada em: " + moeda.getTime_last_update_utc());
-
                     break;
 
                 case 6:
@@ -106,7 +105,6 @@ public class Main {
                     valorConverter = validateAmount(input);
                     System.out.println("O valor de " + valorConverter + "(" + moeda.getBase_code() + ") corresponde a quantia de " + conversor.converterValores(valorConverter, "COP", "USD") + "(" + moeda.getTarget_code() + ")");
                     System.out.println("Cotação atualizada em: " + moeda.getTime_last_update_utc());
-
                     break;
 
                 case 7:
@@ -124,10 +122,29 @@ public class Main {
                     valorConverter = validateAmount(input);
                     System.out.println("O valor de " + valorConverter + "(" + moeda.getBase_code() + ") corresponde a quantia de " + conversor.converterValores(valorConverter, moeda1, moeda2) + "(" + moeda.getTarget_code() + ")");
                     System.out.println("Cotação atualizada em: " + moeda.getTime_last_update_utc());
-
                     break;
 
                 case 8:
+                    var menuHistorico = -1;
+
+                    while (menuHistorico != 0) {
+
+                        for (Moeda itemMoeda : conversor.getHistoricoBusca())
+                            System.out.println(conversor.getHistoricoBusca().indexOf(itemMoeda) + 1 + ":" + itemMoeda);
+
+                        System.out.println("\nDeseja imprimir o histórico de conversões? Digite 1 para imprimir e 0 para retornar ao menu anterior.");
+                        menuHistorico = validateOption(input);
+
+                        if (menuHistorico == 1) {
+                            ImprimeHistoricoConversao imprimir = new ImprimeHistoricoConversao();
+                            imprimir.imprimeHistorico(conversor.getHistoricoBusca());
+                            break;
+                        }
+                    }
+
+                    break;
+
+                case 0:
                     System.out.println("""
                              ********** Obrigado por utilizar os nossos serviços **********
                                     *************** Sessão encerrada ***************
