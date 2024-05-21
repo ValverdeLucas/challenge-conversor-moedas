@@ -3,9 +3,9 @@ package com.one.projetos.principal;
 import com.one.projetos.conversormoedas.metodos.Conversor;
 import com.one.projetos.conversormoedas.modelos.Moeda;
 
-import java.net.MalformedURLException;
 
-import java.net.URL;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Scanner;
 
 public class Main {
@@ -26,17 +26,17 @@ public class Main {
         return input.nextDouble();
     }
 
-    public static void main(String[] args) throws MalformedURLException, NullPointerException {
+    public static void main(String[] args) throws NullPointerException, URISyntaxException {
         Scanner input = new Scanner(System.in);
         Conversor conversor = new Conversor();
         double valorConverter;
 
         String menu = """      
-                ************************************************** 
+                **************************************************
                 Bem vindo(a) ao Conversor de Moedas em tempo real!
-                                
+                
                 Escolha a opção para conversão:
-                                
+                
                 1- Dolar Americano (USD) >>> Real Brasileiro (BRL)
                 2- Real Brasileiro (BRL) >>> Dolar Americano (USD)
                 3- Dolar Americano (USD) >>> Peso Argentino (ARS)
@@ -44,8 +44,8 @@ public class Main {
                 5- Dolar Americano (USD) >>> Peso Colombiano (COP)
                 6- Peso Colombiano (COP) >>> Dolar Americano (USD)
                 7- Seleção personalizada
-                8- Sair      
-                *************************************************                             
+                8- Sair
+                *************************************************
                 """;
 
         var menuPrincipal = -1;
@@ -110,7 +110,7 @@ public class Main {
                     break;
 
                 case 7:
-                    URL listaCambios = new URL("https://www.exchangerate-api.com/docs/supported-currencies");
+                    URI listaCambios = new URI("https://www.exchangerate-api.com/docs/supported-currencies");
                     System.out.println("Digite o código da moeda origem: ");
                     System.out.println("(A lista com todas as moedas aceitas você pode encontrar em " + listaCambios + ")");
                     var moeda1 = input.next().toUpperCase();

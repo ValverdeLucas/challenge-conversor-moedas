@@ -19,13 +19,13 @@ public class RequestAPI {
 
         Gson gson = new Gson();
 
-        HttpClient client = HttpClient
-                .newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(urlConexao))
-                .build();
 
         try {
+            HttpClient client = HttpClient
+                    .newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(urlConexao))
+                    .build();
             HttpResponse<String> response;
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
@@ -35,9 +35,8 @@ public class RequestAPI {
             }
 
             DadosConversor dadosMoeda = gson.fromJson(response.body(), DadosConversor.class);
-            Moeda moeda = new Moeda(dadosMoeda);
 
-            return moeda;
+            return new Moeda(dadosMoeda);
 
         } catch (Exception e) {
             throw new ErroConversorAPI("Opss, Houve um erro durante a consulta à ExchangeRate-API. Tente novamente!");

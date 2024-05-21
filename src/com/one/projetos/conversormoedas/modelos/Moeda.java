@@ -1,12 +1,12 @@
 package com.one.projetos.conversormoedas.modelos;
 
 public class Moeda {
-    private String time_last_update_utc;
-    private double conversion_rate;
-    private String base_code;
-    private String target_code;
+    private final String time_last_update_utc;
+    private final double conversion_rate;
+    private final String base_code;
+    private final String target_code;
 
-    public Moeda(DadosConversor dadosConversor) throws NullPointerException {
+    public Moeda(DadosConversor dadosConversor) {
         this.time_last_update_utc = dadosConversor.time_last_update_utc().substring(0, 25);
         this.conversion_rate = dadosConversor.conversion_rate();
         this.base_code = dadosConversor.base_code();
