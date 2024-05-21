@@ -4,12 +4,13 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Date;
 
 public class RequestAPI extends NullPointerException {
 
-    String urlConexao = "https://v6.exchangerate-api.com/v6/d99a180ca129d9012013b674/latest/BRL";
+    public Moeda RequestApi(String moeda1, String moeda2) {
 
-    public Moeda RequestApi() {
+        String urlConexao = "https://v6.exchangerate-api.com/v6/d99a180ca129d9012013b674/pair/" + moeda1 + "/" + moeda2;
 
         Gson gson = new Gson();
 
@@ -30,7 +31,7 @@ public class RequestAPI extends NullPointerException {
 
             DadosConversor dadosMoeda = gson.fromJson(response.body(), DadosConversor.class);
             Moeda moeda = new Moeda(dadosMoeda);
-            
+
             return moeda;
 
         } catch (Exception e) {
