@@ -34,7 +34,7 @@ public class Main {
         double valorConverter;
 
         String menu = """      
-                \n1**************************************************
+                \n**************************************************
                 Bem vindo(a) ao Conversor de Moedas em tempo real!
                 
                 Escolha a opção para conversão:

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b662be19-d88e-4cd4-b500-cfcd7f1a3577" name="Changes" comment="Lançamento de pequenas correções após finalização da aplicação vanilla">
-      <change afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/ImprimeHistoricoConversao.java" afterDir="false" />
+    <list default="true" id="b662be19-d88e-4cd4-b500-cfcd7f1a3577" name="Changes" comment="Finalização da aplicação com histórico, impressão e correção de pequenos problemas.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/Conversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/metodos/Conversor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/modelos/Moeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/conversormoedas/modelos/Moeda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/one/projetos/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/one/projetos/principal/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lavil/Desktop/gson-2.10.1.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lavil/IdeaProjects/challenge-conversor-moedas/gson-2.10.1.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716263908157</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finalização da aplicação com histórico, impressão e correção de pequenos problemas.">
+      <option name="closed" value="true" />
+      <created>1716310066061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716310066061</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -111,7 +116,8 @@
     <MESSAGE value="Inserção da conexão da API + Menu principal" />
     <MESSAGE value="Finalização da aplicação vanilla (sem nenhum extra)" />
     <MESSAGE value="Lançamento de pequenas correções após finalização da aplicação vanilla" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lançamento de pequenas correções após finalização da aplicação vanilla" />
+    <MESSAGE value="Finalização da aplicação com histórico, impressão e correção de pequenos problemas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalização da aplicação com histórico, impressão e correção de pequenos problemas." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
